@@ -27,12 +27,12 @@ export default class Home extends Component {
   }
 
   handleOriginChange(e){
-    let origin = e.target.value.toLowerCase();
+    let origin = e.target.value;
     this.setState({ origin });
   }
 
   handleDestinationChange(e){
-    let destination = e.target.value.toLowerCase();
+    let destination = e.target.value;
     this.setState({ destination });
   }
 
@@ -66,7 +66,7 @@ export default class Home extends Component {
           origin={this.state.origin}
           destination={this.state.destination}
           />
-        <div>{this.renderResult()}</div>
+        <div className="result-container">{this.renderResult()}</div>
       </div>
     );
   }

@@ -16,7 +16,7 @@ module.exports = {
     })
     .then(result => {
       let weather = {
-        icon: result.data.currently.icon.toUpperCase().replace('-','_'),
+        icon: result.data.currently.icon.toUpperCase().split('-').join('_'),
         summary: result.data.currently.summary,
         temperature: `${parseInt(result.data.currently.temperature)}°F`
       }

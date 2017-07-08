@@ -2,21 +2,21 @@ import React,{ Component } from 'react';
 
 const Search = (props) => (
   <div className="search-container">
-    <text>242 Troutman St Brooklyn, NY 369 Lexington Ave New York, NY</text>
+    <img className="logo" src="http://i.imgur.com/mD8AzP4.png" />
     <form className="search-form" onSubmit={props.handleSubmit}>
       <input
-        type="text" className="origin"
-        placeholder="Search"
+        type="text" className="origin input"
+        placeholder="Enter your origin..."
         value={props.origin}
         onChange={props.handleOriginChange}
       />
       <input
-        type="text" className="destination"
-        placeholder="Search"
+        type="text" className="destination input"
+        placeholder="Enter your destination..."
         value={props.destination}
         onChange={props.handleDestinationChange}
       />
-    <button className="submit-btn" type="submit">SUBMIT!</button>
+    <button className="submit-btn" type="submit">SUBMIT</button>
   </form>
 </div>
 );
