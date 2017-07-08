@@ -10,8 +10,6 @@ module.exports = {
       return result.data.results[0].geometry.location
     })
     .then(coordinates => {
-      console.log('coords: ', coordinates);
-      console.log(`https://api.darksky.net/forecast/${process.env.DARKSKY_KEY}/${coordinates.lat},${coordinates.lng}`)
       return axios.get(`https://api.darksky.net/forecast/${process.env.DARKSKY_KEY}/${coordinates.lat},${coordinates.lng}`)
     })
     .then(result => {
@@ -22,9 +20,9 @@ module.exports = {
       }
       res.send(weather);
     })
+    .catch(err => console.error(err));
   },
   getTravelTime: (req, res) => {
-    console.log(process.env.GOOGLE_KEY);
     const origin = req.query.origin;
     const destination = req.query.destination;
     axios.get(`https://maps.googleapis.com/maps/api/distancematrix/json?mode=transit&transit_mode=subway&units=imperial&origins=${origin}&destinations=${destination}&key=${process.env.GOOGLE_KEY}`)
@@ -35,6 +33,7 @@ module.exports = {
       return info;
     })
     .then(info => res.send(info))
+    .catch(err => console.error(err));
   }
 
 }

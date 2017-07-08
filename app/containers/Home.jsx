@@ -38,6 +38,11 @@ export default class Home extends Component {
 
   handleSubmit(e){
     e.preventDefault();
+
+    if(this.state.origin === "" || this.state.destination === "") {
+      return;
+    }
+
     let start = this.state.origin.split(' ').join('+');
     let end = this.state.destination.split(' ').join('+');
     axios.get(`/api/weather?destination=${end}`)
@@ -52,8 +57,7 @@ export default class Home extends Component {
       console.log(time);
       this.setState({ time, resultFound: true });
     })
-
-    console.log('origin: ', this.state.origin, 'destination: ', this.state.destination);
+    console.log('ran code')
   }
 
   render() {
