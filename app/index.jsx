@@ -1,8 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Routes from './router/Routes';
+import Home from './containers/Home';
+import '../public/assets/styles/main.scss';
 
 render(
-  <Routes />,
+  <Home />,
   document.getElementById('app')
 );

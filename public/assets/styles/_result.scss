@@ -1,0 +1,9 @@
+.result-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-icon {
+  max-height: 100px;
+  max-width: 100px;
+}
