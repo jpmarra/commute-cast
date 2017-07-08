@@ -59,7 +59,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-container">
-        <text>242 Troutman St Brooklyn, NY 369 Lexington Ave New York, NY</text>
         <Search
           handleSubmit={this.handleSubmit}
           handleOriginChange={this.handleOriginChange}

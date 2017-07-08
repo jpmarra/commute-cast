@@ -1,8 +1,9 @@
 import React,{ Component } from 'react';
 
 const Search = (props) => (
-  <div className="search-page-container">
-    <form onSubmit={props.handleSubmit}>
+  <div className="search-container">
+    <text>242 Troutman St Brooklyn, NY 369 Lexington Ave New York, NY</text>
+    <form className="search-form" onSubmit={props.handleSubmit}>
       <input
         type="text" className="origin"
         placeholder="Search"
