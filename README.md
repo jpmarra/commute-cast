@@ -1,7 +1,7 @@
 # Commute Cast
 ### Find out how long your every day NYC subway commute will take today along with the weather at your destination!
 
-##APIs used
+## APIs used
 - **Google Distance Matrix API** to retrieve duration values based on the recommended MTA subway route between start and end points.
 - **DarkSky API** to retrieve current weather data.
 
