@@ -58,5 +58,3 @@ typings/
 .env
 
 #Bundle.js
-
-public/bundle.js
