@@ -5,11 +5,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 980px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    justify-content: space-between;
+  }
 }
 
 .logo {
   max-width: 60%;
   min-width: 600px;
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 980px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 10%;
+    width: 100%;
+  }
 }
 
 .search-form {
@@ -27,6 +40,16 @@
   padding-left: 4vh;
   font-size: 20px;
   font-weight: bold;
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 980px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    border-radius: 100px;
+    font-size: 40px;
+    height: 8vh;
+    margin: 5% 0 5% 0;
+    width: 80vw;
+  }
 }
 
 .submit-btn {
@@ -39,4 +62,13 @@
   border-radius: 35px;
   font-size: 100%;
   font-weight: bold;
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 980px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    border-radius: 100px;
+    font-size: 40px;
+    height: 8vh;
+    width: 40vw;
+  }
 }
