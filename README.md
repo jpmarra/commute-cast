@@ -1,8 +1,13 @@
 # Commute Cast
 ### Find out how long your every day NYC subway commute will take today along with the weather at your destination!
 
+##APIs used
+- **Google Distance Matrix API** to retrieve duration values based on the recommended MTA subway route between start and end points.
+- **DarkSky API** to retrieve current weather data.
+
+
 ## Demo Instructions
-For the out of towners, pick a couple of the addresses from the list of popular locations to serve as your origin and destination
+For the out of towners, pick a couple of the addresses from the list of popular locations to serve as your origin and destination.
 #### Popular locations
 - Empire State Building: 350 5th Ave, New York, NY 10118
 - Times Square: Manhattan, NY 10036
