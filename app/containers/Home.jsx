@@ -48,16 +48,13 @@ export default class Home extends Component {
     axios.get(`/api/weather?destination=${end}`)
     .then(result => {
       let weather = result.data;
-      console.log(weather);
       this.setState({ weather })
     })
     axios.get(`/api/traveltime?origin=${start}&destination=${end}`)
     .then(result => {
       let time = result.data;
-      console.log(time);
       this.setState({ time, resultFound: true });
     })
-    console.log('ran code')
   }
 
   render() {

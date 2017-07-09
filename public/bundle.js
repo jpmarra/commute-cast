@@ -23175,15 +23175,12 @@ var Home = function (_Component) {
       var end = this.state.destination.split(' ').join('+');
       _axios2.default.get('/api/weather?destination=' + end).then(function (result) {
         var weather = result.data;
-        console.log(weather);
         _this2.setState({ weather: weather });
       });
       _axios2.default.get('/api/traveltime?origin=' + start + '&destination=' + end).then(function (result) {
         var time = result.data;
-        console.log(time);
         _this2.setState({ time: time, resultFound: true });
       });
-      console.log('ran code');
     }
   }, {
     key: 'render',
