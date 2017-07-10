@@ -1,13 +1,18 @@
 @import "result";
 @import "search";
 
+body {
+  background-color: #F7F7F2;
+  margin: 0;
+}
+
 :focus {
   outline: none;
 }
 
 .home-container {
-  font-family: "Helvetica";
-  font-weight: 900;
+  font-family: "Poppins";
+  font-weight: 800;
   height: 100vh;
   width: 100vw;
 }
